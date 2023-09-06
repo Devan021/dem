@@ -1,102 +1,102 @@
+
 <!DOCTYPE html>
-<html>
-<style>
-* {
-  box-sizing: border-box;
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+    <!-- Add Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-body {
-  margin: 0;
-  font-family: Arial;
-}
+    <style>
+        /* Custom styles can go here */
 
-.header {
-  text-align: center;
-  padding: 32px;
-}
+        /* Example: Adding a background image */
+        body {
+            background-color: #f5f5f5;
+        }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+        /* Adjust Materialize components as needed */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
+        /* Style for headers */
+        h1, h2 {
+            color: #333333;
+        }
+    </style>
+</head>
 <body>
+    <!-- Add Materialize container class -->
+    <div class="container">
+        <!-- Add Materialize card class -->
+        <div class="card">
+            <!-- Add Materialize card-content class -->
+            <div class="card-content">
+                <!-- Add Materialize card-title class -->
+                <span class="card-title">Customer Churn Prediction</span>
+                <p>
+                    Welcome to the Customer Churn Prediction project README. This project aims to predict customer churn
+                    using machine learning techniques. Below, you will find information about the project, its components,
+                    and how to use it.
+                </p>
+            </div>
+        </div>
 
-<!-- Header -->
-<div class="header">
-  <h1>Responsive Image Gallery</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
+        <h2>Table of Contents</h2>
+        <!-- Add Materialize collection class for table of contents -->
+        <ul class="collection">
+            <li class="collection-item"><a href="#about">About</a></li>
+            <li class="collection-item"><a href="#installation">Installation</a></li>
+            <li class="collection-item"><a href="#usage">Usage</a></li>
+            <li class="collection-item"><a href="#contributing">Contributing</a></li>
+            <li class="collection-item"><a href="#license">License</a></li>
+        </ul>
 
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="https://images.unsplash.com/photo-1476611338391-6f395a0ebc7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1500049242364-5f500807cdd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=742&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1496275068113-fff8c90750d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/uploads/1412533519888a485b488/bb9f9777?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1600807497639-3b5d8e74a232?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1501554728187-ce583db33af7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGhpa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1522850067562-a4c60453058d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGhpa2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" style="width:100%">
-  </div>
-  
-  <div class="column">
-    <img src="https://images.unsplash.com/photo-1536625979259-edbae645c7c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1536626282276-6b2b72fb3093?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1511715885542-a3713331633d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1476979735039-2fdea9e9e407?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1445307806294-bff7f67ff225?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1595267374112-9ec6eb71284b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" style="width:100%">
-  </div> 
+        <!-- About -->
+        <h2 id="about">About</h2>
+        <p>
+            Customer churn is a critical metric for businesses. This project uses machine learning to predict
+            customer churn based on various features. It helps businesses identify and retain at-risk customers.
+        </p>
+
+        <!-- Installation -->
+        <h2 id="installation">Installation</h2>
+        <p>
+            To run this project locally, follow these steps:
+            <ol>
+                <li>Clone the repository: <code>git clone https://github.com/yourusername/customer-churn-prediction.git</code></li>
+                <li>Navigate to the project folder: <code>cd customer-churn-prediction</code></li>
+                <li>Install dependencies: <code>pip install -r requirements.txt</code></li>
+                <li>Run the project: <code>python main.py</code></li>
+            </ol>
+        </p>
+
+        <!-- Usage -->
+        <h2 id="usage">Usage</h2>
+        <p>
+            This project can be used to predict customer churn for a given dataset. You can customize and extend it
+            to fit your specific business needs. Refer to the documentation and code comments for more details.
+        </p>
+
+        <!-- Contributing -->
+        <h2 id="contributing">Contributing</h2>
+        <p>
+            Contributions are welcome! If you have ideas for improvements, new features, or bug fixes, please
+            create a pull request or open an issue on the GitHub repository.
+        </p>
+
+        <!-- License -->
+        <h2 id="license">License</h2>
+        <p>
+            This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.
+        </p>
+    </div>
+
    
-  <div class="column">
-    <img src="https://images.unsplash.com/photo-1629185752152-fe65698ddee4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1458170143129-546a3530d995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1177&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1631635490744-229e551afade?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1606474226448-4aa808468efc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1090&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1527856263669-12c3a0af2aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1527580094867-0e719f119120?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" style="width:100%">
-  </div>
-  
-  <div class="column">
-    <img src="https://images.unsplash.com/photo-1525474089639-b5fff4440315?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1606664817180-00391bdfb9d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1599828586134-fbaff96c63d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1541542684-be0c46417a12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1493568000180-ca2fb70ddcba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="width:100%">
-    <img src="https://images.unsplash.com/photo-1576252951301-3b7b1e4278d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" style="width:100%">
-  </div>
-</div>
-
-</body>
-</html>
-
-
